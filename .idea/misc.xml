@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/MemeSansar/app/src/main/res/drawable/ic_bgcolor.xml" value="0.184" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MemeSansar/app/src/main/res/drawable/ic_imagepicker.xml" value="0.184" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MemeSansar/app/src/main/res/drawable/ic_textcolor.xml" value="0.184" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MemeSansar/app/src/main/res/drawable/ic_textfield.xml" value="0.179" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MemeSansar/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MemeSansar/app/src/main/res/menu/navmenu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/MemeSansar/app/src/main/res/menu/toolbarmenu.xml" value="0.25416666666666665" />
