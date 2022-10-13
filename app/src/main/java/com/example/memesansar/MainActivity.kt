@@ -8,11 +8,15 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.animation.RotateAnimation
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.widget.addTextChangedListener
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationBarItemView
 import com.google.android.material.navigation.NavigationView
@@ -29,6 +33,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         var bgImagepicker = findViewById<ImageView>(R.id.imagepicker)
         var bgColorpicker = findViewById<ImageView>(R.id.bgcolorpicker)
+        val insertText = findViewById<EditText>(R.id.insertText)
+        var movableTextView = findViewById<TextView>(R.id.movableText)
+
+
+        insertText.addTextChangedListener {
+            val textData = insertText.text.toString()
+            movableTextView.text = textData
+        }
 
         bgImagepicker.setOnClickListener {
             openGalleryForImage()
@@ -49,6 +61,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         actionBarDrawerToggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
     }
 
