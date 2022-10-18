@@ -63,11 +63,16 @@
             android:adjustViewBounds="true"
             android:background="@color/light_black"
             android:scaleType="centerInside" />
+
         <TextView
             android:id="@+id/movableText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp" />
 
         <EditText
             android:id="@+id/insertText"
